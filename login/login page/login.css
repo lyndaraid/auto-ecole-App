@@ -1,0 +1,148 @@
+:root{
+    --primary:hsla(56, 100%, 60%, 0.6);;
+    --secondary:hsla(230, 93%, 61%,0.65);
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg,var(--primary),var(--secondary)),
+    url("images/personne-passant-examen-du-permis-conduire.jpg") no-repeat center center / cover;
+    background-size: cover;
+    background-position: center center;
+} 
+
+
+.container{
+    position: relative;
+    max-width: 860px;
+    width: 100%;
+    background: #fff;
+    padding: 30px;
+    margin:25px;
+    box-shadow: 0 5px 10px rgba(0, 0,0, 0.3);
+    border-radius: 15px;
+  
+
+}
+.container .cover {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 50%;
+    background: #fff;
+    border-radius: 15px;
+    z-index: 98;
+}
+.container .cover img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit:fill;
+    z-index: 100;
+    border-radius: 15px;
+}
+.container .form-content{
+    display: flex;
+    align-items: centre;
+    justify-content: space-between;
+}
+.login{
+    width: 360px;
+    height: min-content;
+    border-radius: 12px;
+    background: #ffffffff;
+}
+.login .title{
+    text-transform: uppercase;
+    position: relative;
+    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 25px;
+
+}
+.login .title:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 40px;
+    background: #372ae8;
+}
+.login form{
+    height: 100%;
+    width: 100%;
+    font-size: 17px;
+
+}
+.login form .form-group{
+    margin-bottom: 12px;
+    margin-top: 14px;
+}
+input{
+    border: none !important;
+    border-bottom: 2px solid rgba(0, 0,0, 0.2) !important;
+    transition: all 0.3s ease !important;
+   
+}
+.input-group-text{
+    border: none !important;
+    border-bottom: 2px solid rgba(0, 0,0, 0.2) !important;
+    transition: all 0.3s ease;
+    background: none !important;
+}
+
+i{
+   color:  #372ae8 ;
+   font-size: 17px;
+   margin: auto;
+   background: none;
+}
+
+#hide1{
+    display: none;
+}
+
+.login form input[type="submit"] {
+    font-size: 20px;
+    margin-top: 15px;
+}
+.form-link{
+    text-align: center;
+    margin-top: 10px;
+}
+.form-link span ,
+.form-link span a{
+    font-size: 14px;
+    font-weight: 400;
+ 
+}
+form a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #0171d3;
+}
+form a:hover{
+    text-decoration: underline;
+}
+@media(max-width:700px){
+    .container{
+        max-width: 340px;
+        margin: 20px;
+    }
+    .container .cover {
+        display: none;
+    } 
+
+}

@@ -1,0 +1,54 @@
+/* Ajouter du style personnalisé au calendrier */
+#calendar {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+/* Ajouter des couleurs personnalisées pour les événements */
+.fc-event.course {
+	background-color: #28a745 !important;
+	border-color: #28a745 !important;
+}
+.fc-event.exam {
+	background-color: #007bff !important;
+	border-color: #007bff !important;
+}
+
+/* Modifier la couleur de fond du formulaire de réservation */
+.modal-content {
+	background-color: #f5f5f5;
+	border: none;
+}
+
+/* Ajouter une bordure personnalisée au bouton de confirmation de réservation */
+#addEventModal .modal-footer button {
+	border-radius: 20px;
+	border: none;
+	background-color: #28a745;
+	color: #fff;
+	padding: 10px 20px;
+}
+
+/* Modifier la couleur de fond du formulaire de modification de réservation */
+#editEventModal .modal-content {
+	background-color: #f5f5f5;
+	border: none;
+}
+
+/* Ajouter une bordure personnalisée au bouton de confirmation de modification de réservation */
+#editEventModal .modal-footer button {
+	border-radius: 20px;
+	border: none;
+	background-color: #007bff;
+	color: #fff;
+	padding: 10px 20px;
+}
+
+/* Ajouter une bordure personnalisée au bouton de confirmation de suppression de réservation */
+#deleteEventModal .modal-footer button {
+	border-radius: 20px;
+	border: none;
+	background-color: #dc3545;
+	color: #fff;
+	padding: 10px 20px;
+}

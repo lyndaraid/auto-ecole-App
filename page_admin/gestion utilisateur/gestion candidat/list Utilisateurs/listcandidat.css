@@ -1,0 +1,36 @@
+label{
+    font-weight: 500;
+    font-size: 18px;
+}
+input{
+    border: none !important;
+    border-bottom: 2px solid rgba(0, 0,0, 0.2) !important;
+    transition: all 0.3s ease !important;
+   
+   
+}
+
+
+input[type="password"]{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+.input-group-text{
+    border: none !important;
+    border-bottom: 2px solid rgba(0, 0,0, 0.2) !important;
+    transition: all 0.3s ease;
+}
+#hide1,#hide3{
+    display: none;
+}
+.input-group-text{
+    background: none !important;
+}
+i{
+   color:  #372ae8 ;
+   font-size: 17px;
+   margin: auto;
+   background: none;
+}

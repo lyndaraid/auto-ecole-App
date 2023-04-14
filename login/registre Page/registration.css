@@ -1,0 +1,114 @@
+:root{
+    --primary:hsla(56, 100%, 60%, 0.6);;
+    --secondary:hsla(230, 93%, 61%,0.65);
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg,var(--primary),var(--secondary)),
+    url("images/personne-passant-examen-du-permis-conduire.jpg") no-repeat center center / cover;
+    background-size: cover;
+    background-position: center center;
+}
+.container{
+    position: relative;
+    max-width: 860px;
+    width: 100%;
+    background: #fff;
+    padding: px;
+    margin:10px;
+    /* box-shadow: 0 5px 10px rgba(0, 0,0, 0.15); */
+    border-radius: 15px;
+}
+.container form{
+    border: none;
+    height: 100%;
+    width: 100%;
+    font-size: 17px;
+
+}
+.title{
+    text-transform: uppercase;
+    position: relative;
+    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 25px;
+
+}
+.title:before{
+    content: '';
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: #372ae8;
+}
+label{
+    font-weight: 500;
+    font-size: 18px;
+}
+input{
+    border: none !important;
+    border-bottom: 2px solid rgba(0, 0,0, 0.2) !important;
+    transition: all 0.3s ease !important;
+   
+}
+
+input[type="password"]{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+.input-group-text{
+    border: none !important;
+    border-bottom: 2px solid rgba(0, 0,0, 0.2) !important;
+    transition: all 0.3s ease;
+}
+#hide1,#hide3{
+    display: none;
+}
+.input-group-text{
+    background: none !important;
+}
+i{
+   color:  #372ae8 ;
+   font-size: 17px;
+   margin: auto;
+   background: none;
+}
+.form-link{
+    text-align: center;
+    margin-top: 10px;
+}
+.form-link span ,
+.form-link span a{
+    font-size: 14px;
+    font-weight: 400;
+ 
+}
+form a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #0171d3;
+}
+form a:hover{
+    text-decoration: underline;
+}
+p{
+    font-size: 14px;
+    margin: 15px 0;
+    display: inline-block;
+    color: #000000;
+}

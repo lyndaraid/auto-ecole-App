@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List candidats</title>
+    <!-- fontasesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+     <!-- boostrap css link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+     <!-- Link css -->
+     <link rel="stylesheet" href="listcandidat.css">
+      
+</head>
+<body>
+      <h1 class="bg-dark text-center text-light py-1">nav bar  ici </h1>
+            <div class="container">
+               <!-- bar de rechercher -->
+                <div class="row">
+                    <div class="col-10">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text bg-dark text-light" id="basic-addon1"> <i class="fas fa-search"></i></span>
+                            <input type="text" class="form-control" placeholder="chercher un candidat ..." aria-describedby="basic-addon1">
+
+                          </div>
+                    </div>
+
+                    <div class="col-2">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#usermodal">
+                          <i class="fas fa-user-plus"></i> Ajouter
+                        </button>
+
+                        <!-- Modal -->
+     <div class="modal fade" id="usermodal" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
+       <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fs-5" id="usermodal">Ajouter candidat</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="" id="idform" method="post" enctype="multipart/form-data">
+
+            <div class="row col-lg-12 mx-auto">
+                <div class="col-md-12 text-center mb-2   mx-3">
+                    <img src="images/no-image.jpg" class="js-image img-fluid rounded-5 " style=" border-radius :50% !important;;width: 180px;height:180px;object-fit: cover;">
+                    <div>
+                        <div class="mb-3">
+                          <label for="formFile" class="form-label">Cliquez ici pour choisir une image</label>
+                          <input onchange="display_image(this.files[0])" class="js-image-input form-control" type="file" id="formFile">
+                        </div>
+                        <div><small class="js-error js-error-image text-danger"></small></div>
+                    </div>
+                </div>
+                
+    
+                <div class="row ">
+                    <div class="form_group col-md  mb-2  mt-2  mx-3 ">
+                            <label for="nom"> NOM</label>
+                            <div class="input-group mb-3"> 
+                                <span class="input-group-text"  >
+                                    <i class="fas fa-user-circle"></i>
+                                </span> 
+                                <input type="text" name="nom" id="nom" placeholder="Entre le nom" class="form-control" required>
+                             
+                            
+                            </div>
+                        </div> 
+                        
+                        <div class="form_group col-md mb-3 mt-2  mx-3">
+                            <label for="prenom"> Prénom</label>
+                            <div class="input-group mb-3"> 
+                                <span class="input-group-text"  >
+                                    <i class="fas fa-user"></i>
+                                </span> 
+                                <input type="text" name="prenom" id="prenom" placeholder="Entre le Prenom" class="form-control" required>
+                           
+                            </div>
+                        </div>
+                   </div>
+                   <div class="row">
+                    <div class="form_group  col-md mb-3  mt-3  mx-3">
+                        <label for="email"> Email</label>
+                        <div class="input-group mb-3"> 
+                            <span class="input-group-text"  >
+                                <i class="fas fa-envelope"></i>
+                            </span> 
+                            <input type="email" name="email" id="email" placeholder="Entrer l'email" class="form-control" required>   
+                        </div>
+                    </div>
+                    <div class="form_group col-md mb-3 mt-3  mx-3">
+                        <label for="telephone"> Telephone</label>
+                        <div class="input-group mb-2"> 
+                            <span class="input-group-text"  >
+                                <i class="fas fa-phone"></i>
+                            </span> 
+                            <input type="text" name="telephone" id="telephone" placeholder="Entrer le telephone" class="form-control" required>
+                        </div>
+                    </div>
+            
+            
+                   </div>
+                   <div class="row">
+                    <div class="form_group col-md mb-3  mt-3  mx-3">
+                        <label for="password">Mot de passe</label>
+                        <div class="input-group mb-2"> 
+                            <span class="input-group-text"  >
+                                <i class="fas fa-key"></i>
+                            </span> 
+                            <input type="password" name="password"  id="password" placeholder="Entre votre mot de passe" class="form-control" required>
+                            <span class="input-group-text" onclick="motPASS_Affichage()">
+                           <i class="fas fa-eye" id="hide1"></i> 
+                           <i class="fas fa-eye-slash"  id="hide2"></i>
+                        </span>
+                        
+                        </div>
+                    </div>
+                
+                         <div class="form_group col-md mb-3 mt-3  mx-3">
+                                <label for="password-confirm">confirmer mot de passe</label>
+                                <div class="input-group mb-2"> 
+                                    <span class="input-group-text"  >
+                                        <i class="fas fa-key"></i>
+                                    </span> 
+                                    <input type="password"  id="password-confirm"  name="password" placeholder="confirmer votre mot de passe" class="form-control" required>
+                                    <span class="input-group-text" onclick="motPASS_confirme()">
+                                      <i class="fas fa-eye" id="hide3"></i> 
+                                      <i class="fas fa-eye-slash"  id="hide4"></i>
+                                    </span> 
+                                </div>
+                                
+                                    <div class=""  id="message-confirm" role="alert">
+                                        
+                                    </div>
+                                
+                            </div>
+            
+                   </div>
+    
+                   <div class="row">
+                    <div class="form_group col-md mb-3 mt-3  mx-3">
+                        <label for="">Date naissance</label>
+                        <input type="date" name="birthday" class="form-control">
+                    </div>
+                   
+                    <div class="form_group col-md mb-3 mt-3  mx-3">
+                        <label for="">ville</label>
+                        <div class="input-group mb-2"> 
+                            <span class="input-group-text"  >
+                                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                            </span> 
+                            <input type="text" name="ville" placeholder="Entrer la ville" class="form-control" required>
+                         
+                        </div>
+                    </div>
+            
+                   </div>
+    
+                   
+    
+    
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary" id="submit-button" onclick="checkpassword()">Save</button>
+            </div>
+            
+
+            </div>
+           
+                 </form>
+             </div>
+          </div>
+      </div>
+ </div>
+
+                    
+     </div>
+                  
+                <!-- fin bar recherche -->
+
+            </div>
+     
+
+
+
+
+    <!--  Link JS -->
+    <script src="listcandidat.js"></script>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <!-- boostrap js link  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>
