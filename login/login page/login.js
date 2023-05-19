@@ -21,3 +21,12 @@ function motPASS_Affichage(){
 document.cookie="myusername="+e+";paath=http://localhost/web6pm/";
 
  }
+
+// Masquer le message après 5 secondes
+setTimeout(function() {
+  var errorMessage = document.getElementById('error-message');
+  if (errorMessage) {
+    errorMessage.style.display = 'none';
+  }
+}, 5000); // 5000 millisecondes = 5 secondes
+ 

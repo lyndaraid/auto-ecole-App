@@ -74,3 +74,10 @@ if (motPasse.length != 0) {
 }
     
 }
+// Vérifier si le paramètre 'success' est présent dans l'URL
+if (isset($_GET['success'])) {
+  // Récupérer la valeur du paramètre 'success'
+  $successMessage = $_GET['success'];
+  // Échapper les caractères spéciaux pour éviter les problèmes de sécurité
+  $successMessage = htmlspecialchars($successMessage);
+?>
