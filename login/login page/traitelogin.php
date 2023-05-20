@@ -45,7 +45,7 @@ if (isset($_POST['Valid_connexion'])) {
                                 header('Location: secretaire.php');
                                 exit();
                             case 'admin':
-                                header('Location:  ../../page_admin/admin.php');
+                                header('Location:  ../../page_admin/gestion des vehicules/gestion_vehicules_permisA.php');
                                 exit();
                             case 'moniteur':
                                 header('Location:  ../../page_moniteur/moniteur.php');
