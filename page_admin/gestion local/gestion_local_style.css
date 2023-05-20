@@ -1,0 +1,43 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.navbar{
+    background-color:cornflowerblue !important;
+    margin-bottom: 20px;
+    transition-duration: 0.6s;
+    position: sticky;
+}
+.navbar ul li a{
+    color: white !important;
+    padding-left: 20px !important;
+}
+
+.dropdown-menu{
+    background-color:rgb(115, 160, 243) !important;
+}
+.dropdown-item:hover{
+   background-color: cornflowerblue !important;
+}
+.header-image{
+    size: 100px;
+    height: 200px;
+    text-align: center;
+    
+    }
+
+.logo{
+    size: 50PX;
+    height: 100px;
+}
+.Titre_logo{
+    font-size: medium;
+    font-weight: bold;
+    color: dodgerblue;
+}
+a{
+    text-decoration: none;
+}

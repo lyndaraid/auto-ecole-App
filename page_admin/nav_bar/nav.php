@@ -3,10 +3,12 @@
 </head>
 <nav class="navbar navbar-expand-lg navbar-primary bg-primary mb-4 custom-navbar">
 
-    <a class="navbar-brand" href="#" style=" display: flex;align-items: center;margin: 0 24px;color: #ffffff;font-size: 24px;margin-right: 14px;cursor: pointer;font-size:30px; font-weight:500;">
+    <a class="navbar-brand" href="#"
+        style=" display: flex;align-items: center;margin: 0 24px;color: #ffffff;font-size: 24px;margin-right: 14px;cursor: pointer;font-size:30px; font-weight:500;">
         RoadMaster
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -44,7 +46,7 @@
             <li class="nav-item">
                 <a class="nav-link" style="color: #ffffff;font-size:15px; margin-right: 350px;" href="#">
                     <i class="bx bx-folder-open icon"></i>
-                    <span class="link">Files</span>
+                    <span class="link">Gestion Exemens</span>
                 </a>
             </li>
         </ul>
@@ -56,7 +58,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class=" nav-link" style="color: #ffffff;font-size:15px;" href="#">
+                <a class=" nav-link" style="color: #ffffff;font-size:15px;" href="../../includ/logout.php">
                     <i class="bx bx-log-out icon"></i>
                     <span class="link">Logout</span>
                 </a>
