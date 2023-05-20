@@ -57,7 +57,7 @@
             <li class="nav-item">
                 <a class="nav-link" style="color: #ffffff;font-size:15px;" href="../gestion local/gestion_local.php">
                     <i class="bx bx-map icon"></i>
-                    <span class="link">Gestion Local</span>
+                    <span class="link"> Gestion Local</span>
                 </a>
             </li>
 

@@ -13,7 +13,7 @@ $(function() {
           }
       })
   }
-  getBills();
+  getBills(); 
 
     $('#create').on('click', function(e) {
        

@@ -3,11 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/dt-1.11.3/datatables.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="gestion_local_style.css">
@@ -17,8 +15,8 @@
 <body>
     <header>
         <?php
-  include "../nav_bar/nav.php";
-  ?>
+        include "../nav_bar/nav.php";
+        ?>
 
         <section class="container py-5">
             <div class="row">
@@ -33,10 +31,8 @@
                 </div>
                 <div class="col-md-6">
                     <div class="d-flex justify-content-end">
-                        <button class="btn btn-primary btn-sm me-3" data-bs-toggle="modal"
-                            data-bs-target="#createModal"><i class="fas fa-folder-plus"></i> Nouveau</button>
-                        <a href="process.php?action=export" class="btn btn-success btn-sm" id="export"><i
-                                class="fas fa-table"></i> Exporter</a>
+                        <button class="btn btn-primary btn-sm me-3" data-bs-toggle="modal" data-bs-target="#createModal"><i class="fas fa-folder-plus"></i> Nouveau</button>
+                        <a href="process.php?action=export" class="btn btn-success btn-sm" id="export"><i class="fas fa-table"></i> Exporter</a>
                     </div>
                 </div>
             </div>
@@ -65,13 +61,11 @@
                                 <label for="local_nom">Nom du local</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" id="local_adresse" rows="3" name="local_adresse"
-                                    required></textarea>
+                                <textarea class="form-control" id="local_adresse" rows="3" name="local_adresse" required></textarea>
                                 <label for="local_adresse">Adresse du local</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="number" class="form-control" id="local_capacite" name="local_capacite"
-                                    required>
+                                <input type="number" class="form-control" id="local_capacite" name="local_capacite" required>
                                 <label for="local_capacite">Capacitée du local</label>
                             </div>
                             <div class="form-floating mb-3">
@@ -82,8 +76,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
-                        <button type="button" class="btn btn-primary" id="create" name="create">Ajouter <i
-                                class="fas fa-plus"></i></button>
+                        <button type="button" class="btn btn-primary" id="create" name="create">Ajouter <i class="fas fa-plus"></i></button>
                     </div>
                 </div>
             </div>
@@ -105,18 +98,15 @@
                                 <label for="local_nomUpdate">Nom du local</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" id="local_adresseUpdate" rows="3" name="local_adresse"
-                                    required></textarea>
+                                <textarea class="form-control" id="local_adresseUpdate" rows="3" name="local_adresse" required></textarea>
                                 <label for="local_adresseUpdate">Adresse du local</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="number" class="form-control" id="local_capaciteUpdate"
-                                    name="local_capacite" required>
+                                <input type="number" class="form-control" id="local_capaciteUpdate" name="local_capacite" required>
                                 <label for="local_capciteUpdate">Type du local</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="local_typeUpdate" name="local_type"
-                                    required>
+                                <input type="text" class="form-control" id="local_typeUpdate" name="local_type" required>
                                 <label for="local_typeUpdate">Type du local</label>
                             </div>
 
@@ -124,16 +114,14 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
-                        <button type="button" class="btn btn-primary" id="update" name="update">Mettre à jour <i
-                                class="fas fa-sync"></i></button>
+                        <button type="button" class="btn btn-primary" id="update" name="update">Mettre à jour <i class="fas fa-sync"></i></button>
                     </div>
                 </div>
             </div>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer">
         </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
         </script>
         <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.11.3/datatables.min.js"></script>
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
