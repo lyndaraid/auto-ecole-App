@@ -46,9 +46,45 @@
             <td>Otto</td>
             <td>@mdo</td>
             <td>
-                <a href="#"><i class="fas fa-edit mr-2"></i></a>
-                <a href="#"><i class="fas fa-user-circle mr-2"></i></a>
-                <a href="#"><i class="fas fa-trash-alt"></i></a>
+                <a href="#" class="mr-3 profile" style="margin-right: 20px;" data-bs-toggle="modal"
+                    data-bs-target="#userViewModal" title="ViewProfile">
+                    <i class="fas fa-user-circle text-info mr-3"></i>
+                </a>
+
+                <a href="#" class="mr-3 editeuser" style="margin-right: 20px;" data-bs-toggle="modal"
+                    data-bs-target="#usermodal" title="edite">
+                    <i class="fas fa-edit pr-3"></i>
+                </a>
+
+                <a href="#" class="deleteuser" title="delete">
+                    <i class=" fas fa-trash-alt text-danger"></i>
+                </a>
+
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>
+                <a href="#" class="mr-3 profile" style="margin-right: 20px;" data-bs-toggle="modal"
+                    data-bs-target="#userViewModal" title="ViewProfile">
+                    <i class="fas fa-user-circle text-info mr-3"></i>
+                </a>
+
+                <a href="#" class="mr-3 editeuser" style="margin-right: 20px;" data-bs-toggle="modal"
+                    data-bs-target="#usermodal" title="edite">
+                    <i class="fas fa-edit pr-3"></i>
+                </a>
+
+                <a href="#" class="deleteuser" title="delete">
+                    <i class=" fas fa-trash-alt text-danger"></i>
+                </a>
+
             </td>
         </tr>
     </tbody>

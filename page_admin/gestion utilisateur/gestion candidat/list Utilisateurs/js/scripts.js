@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    alert("js");
+    // alert("js");
 
     // Ajout des utilisateurs
     $(document).on("submit", "#addform", function(e) {
