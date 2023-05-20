@@ -10,11 +10,13 @@
 
                     <div class="row col-lg-12 mx-auto">
                         <div class="col-md-12 text-center mb-2   mx-3">
-                            <img src="images/no-image.jpg" class="js-image img-fluid rounded-5 " style=" border-radius :50% !important;;width: 180px;height:180px;object-fit: cover;">
+                            <img src="images/no-image.jpg" class="js-image img-fluid rounded-5 "
+                                style=" border-radius :50% !important;;width: 180px;height:180px;object-fit: cover;">
                             <div>
                                 <div class="mb-3">
                                     <label for="formFile" class="form-label">Cliquez ici pour choisir une image</label>
-                                    <input onchange="display_image(this.files[0])" class="js-image-input form-control" type="file" id="formFile" name="photo">
+                                    <input onchange="display_image(this.files[0])" class="js-image-input form-control"
+                                        type="file" id="formFile" name="photo">
                                 </div>
                                 <div><small class="js-error js-error-image text-danger"></small></div>
                             </div>
@@ -28,7 +30,8 @@
                                     <span class="input-group-text">
                                         <i class="fas fa-user-circle"></i>
                                     </span>
-                                    <input type="text" name="nom" id="nom" placeholder="Entre le nom" class="form-control" required>
+                                    <input type="text" name="nom" id="nom" placeholder="Entre le nom"
+                                        class="form-control" required>
 
 
                                 </div>
@@ -40,7 +43,8 @@
                                     <span class="input-group-text">
                                         <i class="fas fa-user"></i>
                                     </span>
-                                    <input type="text" name="prenom" id="prenom" placeholder="Entre le Prenom" class="form-control" required>
+                                    <input type="text" name="prenom" id="prenom" placeholder="Entre le Prenom"
+                                        class="form-control" required>
 
                                 </div>
                             </div>
@@ -52,7 +56,8 @@
                                     <span class="input-group-text">
                                         <i class="fas fa-envelope"></i>
                                     </span>
-                                    <input type="email" name="email" id="email" placeholder="Entrer l'email" class="form-control" required>
+                                    <input type="email" name="email" id="email" placeholder="Entrer l'email"
+                                        class="form-control" required>
                                 </div>
                             </div>
                             <div class="form_group col-md mb-3 mt-3  mx-3">
@@ -61,7 +66,8 @@
                                     <span class="input-group-text">
                                         <i class="fas fa-phone"></i>
                                     </span>
-                                    <input type="text" name="telephone" id="telephone" placeholder="Entrer le telephone" class="form-control" required>
+                                    <input type="text" name="telephone" id="telephone" placeholder="Entrer le telephone"
+                                        class="form-control" required>
                                 </div>
                             </div>
 
@@ -74,7 +80,8 @@
                                     <span class="input-group-text">
                                         <i class="fas fa-key"></i>
                                     </span>
-                                    <input type="password" name="password" id="password" placeholder="Entre votre mot de passe" class="form-control" required>
+                                    <input type="password" name="password" id="password"
+                                        placeholder="Entre votre mot de passe" class="form-control" required>
                                     <span class="input-group-text" onclick="motPASS_Affichage()">
                                         <i class="fas fa-eye" id="hide1"></i>
                                         <i class="fas fa-eye-slash" id="hide2"></i>
@@ -89,7 +96,8 @@
                                     <span class="input-group-text">
                                         <i class="fas fa-key"></i>
                                     </span>
-                                    <input type="password" id="password-confirm" name="re_password" placeholder="confirmer votre mot de passe" class="form-control" required>
+                                    <input type="password" id="password-confirm" name="re_password"
+                                        placeholder="confirmer votre mot de passe" class="form-control" required>
                                     <span class="input-group-text" onclick="motPASS_confirme()">
                                         <i class="fas fa-eye" id="hide3"></i>
                                         <i class="fas fa-eye-slash" id="hide4"></i>
@@ -116,7 +124,8 @@
                                     <span class="input-group-text">
                                         <i class="fa-sharp fa-solid fa-location-dot"></i>
                                     </span>
-                                    <input type="text" name="ville" placeholder="Entrer la ville" class="form-control" required>
+                                    <input type="text" name="ville" placeholder="Entrer la ville" class="form-control"
+                                        required>
 
                                 </div>
                             </div>
@@ -129,7 +138,8 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary" id="submit-button" onclick="checkpassword()">Save</button>
+                        <button type="submit" class="btn btn-primary" id="submit-button"
+                            onclick="checkpassword()">Save</button>
 
                         <!-- fields 2 input firstfor adding and next for updating, deletening or viewing profile -->
                         <input type="hidden" name="action" value="adduser">

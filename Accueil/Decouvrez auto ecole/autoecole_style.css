@@ -1,0 +1,146 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.navbar{
+    background-color:cornflowerblue !important;
+    padding: 30px 0px;
+    transition-duration: 0.6s;
+    position: sticky;
+}
+.navbar ul li a{
+    color: white !important;
+    margin-left: 40px;
+}
+
+.dropdown-menu{
+     background-color:cornflowerblue !important;
+}
+
+.header-image{
+    size: 100px;
+    height: 200px;
+    text-align: center;
+    }
+
+.logo{
+    size: 50PX;
+    height: 100px;
+}
+.Titre_logo{
+    font-size: medium;
+    font-weight: bold;
+    color: dodgerblue;
+}
+.describe_1{
+    padding-top: 8px;
+    padding-bottom: 10px;
+}
+.describe_1 p{
+    text-align: center;
+}
+.facade-auto-ecole{
+    height: 86%;
+    max-width: 118%;
+    object-position: center;
+    object-fit: cover;
+    margin: 0px;
+    margin-left: 10px; 
+}
+.describe_2{
+    margin: 1px 40px;
+}
+.describe_2_titre{
+    font-weight: bold;
+    font-size: 20px;
+    color: dodgerblue;
+}
+.list_staff{
+  margin: 10px;
+}
+.describe_2_info{
+    margin-top: 10px;
+}
+.describe_3{
+    margin-bottom: 30px;  
+}
+
+.btn_forfait_A{
+    position: absolute;
+    bottom: -220px;
+    left: 30%;
+    background-color: cornflowerblue;
+    color:white;
+    width: 260px;
+    height: 43px;
+    border-radius: 5px;
+    border-color: transparent;
+    margin-top: 10px;
+}
+.btn_forfait_B{
+    position: absolute;
+    bottom: -220px;
+    left: 52%;
+    background-color: cornflowerblue;
+    color:white;
+    width: 260px;
+    height: 43px;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+.btn_forfait_A:hover{
+    width: 245px;
+    height: 35px;
+    background-color: black;
+}
+
+.btn_forfait_B:hover{
+    width: 245px;
+    height: 35px;
+    background-color: black;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .facade-auto-ecole{
+        height: 100%;
+        max-width: 100%;
+        object-position: center;
+        object-fit: fill;
+        margin: 0px;
+    }
+    .describe_2_info{
+        margin-top: 10px;
+    }
+    .btn_forfait_A{
+        
+        bottom: -320px;
+        left: 60px;
+        background-color: cornflowerblue;
+        color:white;
+        width: 260px;
+        height: 43px;
+        border-radius: 5px;
+        border-color: transparent;
+    }
+    .btn_forfait_B{
+        
+        bottom: -370px;
+        left: 60px;
+        background-color: cornflowerblue;
+        color:white;
+        width: 260px;
+        height: 43px;
+        border-radius: 5px;
+        border-color: transparent;
+        
+    }
+    .describe_3{
+        margin-bottom: 30px;  
+    }
+    
+}

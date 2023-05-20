@@ -1,0 +1,383 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+footer{
+  background-color: #79a3ef;
+  margin-top: 20px ;
+  padding-bottom: 15px;
+}
+
+.main{
+  margin-bottom: 20px;
+}
+.navbar{
+  background-color:cornflowerblue !important;
+  margin-bottom: 20px;
+  transition-duration: 0.6s;
+  position: sticky;
+}
+.navbar ul li a{
+  color: white !important;
+  padding-left: 60px !important;
+}
+
+.dropdown-menu{
+  background-color:rgb(115, 160, 243) !important;
+}
+.dropdown-item:hover{
+ background-color: cornflowerblue !important;
+}
+
+.header-image{
+  size: 100px;
+  height: 200px;
+  text-align: center;
+}
+
+.logo{
+    size: 50PX;
+    height: 100px;
+}
+.Titre_logo{
+  font-size: medium;
+  font-weight: bold;
+  color: dodgerblue;}
+
+.img_acceuil{
+    
+  width: 100%;
+  object-fit: cover;
+}
+
+.container1{
+   position: relative;
+}
+.container1 .btncontact {
+ position: absolute;
+ top: 50%;
+ left: 20%;
+ transform: translate(-70%, -70%);
+ -ms-transform: translate(-70%, -70%);
+ background-color: cornflowerblue;
+ color: white;
+ font-size: 25px;
+ padding: 12px 24px;
+ border: none;
+ cursor: pointer;
+ border-radius: 5px;
+ opacity: 70%;
+ width: 260px;
+ height: 100px;
+}
+.container1 .btncontact a{
+ text-decoration: none;
+ color: white;
+}
+.container1 .btncontact:hover{
+ width: 240px;
+ height: 90px;
+ background-color: black;
+ }
+.container1 .btnforfaits {
+ position: absolute;
+ top: 50%;
+ left: 55%;
+ transform: translate(-70%, -70%);
+ -ms-transform: translate(-70%, -70%);
+ background-color: cornflowerblue;
+ color: white;
+ font-size: 25px;
+ padding: 12px 24px;
+ border: none;
+ cursor: pointer;
+ border-radius: 5px;
+ opacity: 70%;
+ width: 260px;
+ height: 100px;
+ }
+.container1 .btnforfaits a{
+ text-decoration: none;
+ color:white;
+}
+.container1 .btnforfaits:hover{
+  width: 240px;
+  height: 90px;
+  background-color: black;
+}  
+.container1 .btnautoecole {
+ position: absolute;
+ top: 50%;
+ left: 85%;
+ transform: translate(-70%, -70%);
+ -ms-transform: translate(-70%, -70%);
+ background-color:cornflowerblue;
+  color: white;
+  font-size: 25px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  opacity: 70%;
+  width: 260px;
+  height: 100px;
+}
+.container1 .btnautoecole a{
+ text-decoration: none;
+ color: white;
+}
+.container1 .btnautoecole:hover{
+ width: 240px;
+ height: 90px;
+ background-color: black;
+}  
+.titre_forfaits{
+  position: relative;
+  left: 40%;
+  padding: 10px;
+}
+    
+.icon_car{
+  position: relative;
+  left: 40%;
+  padding: 10px;
+  width:90px;
+}
+.icon_moto{
+  position: relative;
+  left: 40%;
+  padding: 10px;
+  width:90px;
+}
+.forfait_auto{
+  font-weight: bold;
+  position: relative;
+  left: 37%;
+  font-size: 20px;
+}
+.forfait_moto{
+  font-weight: bold;
+  position: relative;
+  left:  37%;
+  font-size: 20px;
+}
+.details_forfaits_auto{
+  width: 80%;
+  margin: auto;
+}
+.location{
+ margin-top: 10px;
+ font-size: 25px;
+ position: relative;
+ left: 18%;
+ padding-top:10px ;
+}
+.contact{
+ margin-top: 10px;
+ font-size: 25px;
+ padding-top:10px ;
+}
+.adresse{
+ max-width: 80%;
+ margin: auto;
+ justify-content: center;
+ text-justify: justify;
+ font-size: 16px;
+}
+.contact_info{
+ max-width: 90%;
+ margin: auto;
+ justify-content: center;
+ text-justify: justify;
+ font-size: 16px;
+ padding: 5px;
+}
+.horaires_info{
+ font-weight: bold;
+ font-size: 16px;
+}
+footer p{
+ color: dimgray;
+}
+.horaires{
+  margin-top: 10px;
+  font-size: 25px;
+  position: relative;
+  left: 18%;
+  padding-top:10px ;
+}
+@media only screen and (max-width: 600px) {
+  .container{
+      
+      height: 400px;
+      max-width: 100%;
+      
+  }
+  .main{
+    margin-bottom: 20px;
+  }
+  .img_acceuil{
+      height: 350px;
+      max-width: 100%;
+      object-position: center;
+      object-fit: cover;
+      margin: 0px;
+  }
+  .container1 .btncontact {
+      position: absolute;
+      top:25%;
+      left: 65%;
+      transform: translate(-70%, -70%);
+      -ms-transform: translate(-70%, -70%);
+      background-color: cornflowerblue;
+      color: white;
+      font-size: 16px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+      opacity: 70%;
+      width: 200px;
+      height: 60px;
+    }
+    .container1 .btncontact a{
+      text-decoration: none;
+      color: white;
+    }
+    .container1 .btnforfaits {
+      position: absolute;
+      top: 50%;
+      left: 65%;
+      transform: translate(-70%, -70%);
+      -ms-transform: translate(-70%, -70%);
+      background-color: cornflowerblue;
+      color: white;
+      font-size: 16px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+      opacity: 70%;
+      width: 200px;
+      height: 60px;
+    }
+    .container1 .btnforfaits a{
+      text-decoration: none;
+      color: white;
+    }
+    .container1 .btnautoecole {
+      position: absolute;
+      top: 80%;
+      left: 65%;
+      transform: translate(-70%, -70%);
+      -ms-transform: translate(-70%, -70%);
+      background-color: cornflowerblue;
+      color: white;
+      font-size: 16px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+      opacity: 70%;
+      width: 200px;
+      height: 60px;
+    }
+    .container1 .btncontact a{
+      text-decoration: none;
+      color: white;
+    }
+    .titre_forfaits{
+      position: relative;
+      left: 30%;
+      padding: 10px;
+    }
+    
+    .icon_car{
+      position: relative;
+      left: 40%;
+      padding: 10px;
+      width:90px;
+   }
+  .icon_moto{
+      position: relative;
+      left: 40%;
+      padding: 10px;
+      width:90px;
+  }
+  .forfait_auto{
+      font-weight: bold;
+      position: relative;
+      left: 35%;
+      font-size: 20px;
+  }
+  .forfait_moto{
+      font-weight: bold;
+      position: relative;
+      left:  35%;
+      font-size: 20px;
+  }
+  footer{
+    background-color: cornflowerblue;
+    margin-top: 800px;
+  }
+  .location{
+
+    position: relative;
+    left: 30%;
+    padding-top:10px ;
+  }
+  .adresse{
+   max-width: 60%;
+   margin: auto;
+   justify-content: center;
+   text-justify: justify;
+   font-size: 18px;
+  }
+  .contact_info{
+   max-width: 80%;
+   margin: auto;
+   justify-content: center;
+   text-justify: justify;
+   font-size: 18px;
+  }
+  .contact{
+   position: relative;
+   left: 25%;
+  padding-top:17px ;
+  }
+ .horaires{
+   position: relative;
+   left: 25%;
+   padding-top:10px ;
+  }
+  .horaires_info{
+   padding: 5px;
+   max-width: 80%;
+   margin: auto;
+   justify-content: center;
+   text-justify: justify;
+   font-size: 18px;
+  }
+  .horaires_info2{
+   padding: 5px;
+   max-width: 80%;
+   margin: auto;
+   justify-content: center;
+   text-justify: justify;
+   font-size: 18px;
+  }
+  body{
+   padding: 0;
+   margin: 0;
+   background-color: white;
+   overflow-y: scroll;
+   overflow-x: hidden;
+  }
+}

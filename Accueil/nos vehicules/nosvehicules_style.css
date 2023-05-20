@@ -1,0 +1,85 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.navbar{
+    background-color:cornflowerblue !important;
+    margin-bottom: 20px;
+    transition-duration: 0.6s;
+    position: sticky;
+}
+.navbar ul li a{
+    color: white !important;
+    padding-left: 70px !important;
+}
+
+.dropdown-menu{
+     background-color:rgb(115, 160, 243) !important;
+}
+.dropdown-item:hover{
+    background-color: cornflowerblue !important;
+}
+.header-image{
+    size: 100px;
+    height: 200px;
+    text-align: center;
+    
+    }
+
+.logo{
+    size: 50PX;
+    height: 100px;
+}
+.Titre_logo{
+    font-size: medium;
+    font-weight: bold;
+    color: dodgerblue;
+}
+.captur{
+    width: 200px;
+    height: 100px;
+    text-align: center; 
+    object-fit: cover;
+    margin: 30px ;
+}
+.vehicules_voitures{
+  text-align: center;
+/* box-shadow: rgba(0, 0, 0, 0.45) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+}
+
+.titre_voitures{
+    position : relative;
+    left : 30%;
+    padding : 10px;
+}
+.container1{
+    margin-left: 6px;
+    margin-right: 6px;
+}
+.moto{
+    width: 200px;
+    height: 160px;
+    text-align: center; 
+    object-fit: cover;
+    margin: 30px ;
+}
+@media only screen and (max-width: 600px){
+
+    .titre_voitures{
+        position: relative;
+        left: 10%;
+        padding: 10px;
+        font-size: 19px;
+      }
+      .dropdown-menu{
+        background-color:rgb(115, 160, 243) !important;
+   }
+   .dropdown-item:hover{
+       background-color: cornflowerblue !important;
+   }
+}
+
+
