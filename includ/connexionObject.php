@@ -20,7 +20,7 @@ class Database
 
         try {
             $this->pdo = new PDO($dsn, $this->dbuser, $this->dbpassword, $options);
-            print "Connexion réussie à la base de données";
+            // print "Connexion réussie à la base de données";
         } catch (PDOException $e) {
             die("Erreur de connexion à la base de données : " . $e->getMessage());
         }

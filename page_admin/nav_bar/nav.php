@@ -14,41 +14,61 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" style="color: #ffffff;font-size:15px;" href="#">
+                <a class="nav-link" style="color: #ffffff;font-size:15px;" href="../../Accueil/page_accueil.php">
                     <i class="bx bx-home-alt icon"></i>
                     <span class="link">Accueil</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" style="color: #ffffff;font-size:15px;" href="#">
+                <a class="nav-link" style="color: #ffffff;font-size:15px;"
+                    href="../gestion utilisateur/gestion candidat/list Utilisateurs/listcandidat.php">
                     <i class="bx bxs-group icon"></i>
                     <span class="link">Utilisateurs</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" style="color: #ffffff;font-size:15px;" href="#">
+                <a class="nav-link" style="color: #ffffff;font-size:15px;" href="../gestion cours/gestion_cour.php">
                     <i class="bx bx-book-open icon"></i>
                     <span class="link">Cours</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" style="color: #ffffff;font-size:15px;" href="#">
+                <a class="nav-link" style="color: #ffffff;font-size:15px;" href="../gestion planing/planing.html">
                     <i class="bx bx-calendar icon"></i>
                     <span class="link">Planning</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" style="color: #ffffff;font-size:15px;" href="#">
+                <a class="nav-link" style="color: #ffffff;font-size:15px;"
+                    href="../gestion_des_paiment/paiment_normal.php">
                     <i class="bx bx-money icon"></i>
                     <span class="link">Gestion Paiement</span>
                 </a>
             </li>
+
             <li class="nav-item">
-                <a class="nav-link" style="color: #ffffff;font-size:15px; margin-right: 350px;" href="#">
-                    <i class="bx bx-folder-open icon"></i>
-                    <span class="link">Gestion Exemens</span>
+                <a class="nav-link" style="color: #ffffff;font-size:15px;" href="">
+                    <i class="bx bx-car icon"></i>
+                    <span class="link">Gestion Vehicule</span>
                 </a>
             </li>
+
+
+            <li class="nav-item">
+                <a class="nav-link" style="color: #ffffff;font-size:15px;" href="../gestion local/gestion_local.php">
+                    <i class="bx bx-map icon"></i>
+                    <span class="link">Gestion Local</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" style="color: #ffffff;font-size:15px; margin-right: 100px;"
+                    href="../gestion examen/gestion_examen.php">
+                    <i class="bx bx-check-square icon"></i>
+                    <span class="link">Gestion Examens</span>
+                </a>
+            </li>
+
         </ul>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">

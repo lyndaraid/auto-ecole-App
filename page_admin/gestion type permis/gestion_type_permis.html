@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+              crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/dt-1.11.3/datatables.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <link rel="stylesheet" href="gestiontypepermis_style.css">
+        <title>Gestion des types pemris</title>
+    </head>
+    <body>
+        <header>
+            <div class="header-image">
+                <img  class="logo" src="../../logo.jpg" alt="">
+                   <p class="Titre_logo">Auto-école Annarakdim Nassim</p>
+                   <p class="Titre_logo_2">Auto-école Bejaia(06)</p>
+           </div>
+         
+            <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark bg-gradient pt-3 pb-3">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">           </a>
+              
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                  <ul class="navbar-nav text-center">
+                     <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" 
+                             data-bs-toggle="dropdown" aria-expanded="false">Gestion des utulisateurs</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                      <li><a class="dropdown-item" href="#">Gestion des candidats</a></li>
+                                      <li><a class="dropdown-item" href="#">gestion des moniteurs</a></li>
+                                      <li><a class="dropdown-item" href="#">gestion des secrétaires</a></li>
+                                  </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" 
+                             data-bs-toggle="dropdown" aria-expanded="false">Gestion des plannings</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                     <li><a class="dropdown-item" href="#">Gestion des plannings cours</a></li>
+                                     <li><a class="dropdown-item" href="#">Gestion des plannings examens</a></li>
+                                 </ul>
+                     </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"  role="button" 
+                            data-bs-toggle="dropdown" aria-expanded="false">Gestion des vehicules</a>
+                               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                   <li><a class="dropdown-item" href="#">Gestion des vehicules permis A</a></li>
+                                   <li><a class="dropdown-item" href="#">Gestion des véhicules permis B</a></li>  
+                                </ul>
+                      </li>
+                      <li>
+                          <a class="nav-link " aria-current="page" href="#">Gestion types permis</a>
+                      </li>
+                      
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"  role="button" 
+                             data-bs-toggle="dropdown" aria-expanded="false">Gestion des paiment</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Gestion des paiments forfait</a></li>
+                                    <li><a class="dropdown-item" href="#">Gestion des paiment normals</a></li>  
+                                 </ul>
+                       </li>
+                  </ul>
+                  
+                </div>
+                </div>
+              </nav>
+        </header>
+
+        <section class="container py-5">
+             <div class="row">
+                <div class="col-lg-8 col-sm mb-5 mx-auto">
+                    <h1 class="fs-4 text-center lead text-primary">Gestion des types de permis</h1>
+                </div>
+             </div>
+             <div class="dropdown-divider border-warning"></div>
+             <div class="row">
+                <div class="col-md-6">
+                    <h5 class="fw-bold mb-8">Liste des permis disponibles</h5>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-end">
+                        <button class="btn btn-primary btn-sm me-3" data-bs-toggle="modal" data-bs-target="#createModal"><i class="fas fa-folder-plus"></i> Nouveau</button>
+                        <a href="#" class="btn btn-success btn-sm" id="export"><i class="fas fa-table"> Exporter</i></a>
+                    </div>
+                </div>
+              </div>
+              <div class="dropdown-divider border-warning"></div>
+              <div class="row">
+                <div class="table-responsive" id="orderTable">
+                    <table class="table text-center">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nom</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Prix</th>
+                            <th scope="col">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                           
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Permis A1</td>
+                            <td>...............?YUFYTDRXHFG</td>
+                            <td>1223456</td>
+                            <td>
+                                <a href="#" class="text-info me-2 infoBtn" title="Voir détails">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                                <a href="#" class="text-pprimary me-2 editBtn" title="Modifier">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                                <a href="#" class="text-danger me-2 deleteBtn" title="supprimer">
+                                    <i class="fas fa-trash-alt"></i>
+                                </a>
+                            </td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                </div>
+              </div>
+        </section>
+
+
+   
+
+<!-- Modal -->
+<div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="createModalLabel">Nouveau paiment</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="" method="post" id="formUpdateOrder">
+          <input type="hidden" name="id" id="bill_id">
+          <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="nom_permis" name="nom_permis">
+              <label for="nom_permis">Nom du type du permis</label>
+          </div>
+          <div class="form-floating mb-3">
+              <textarea class="form-control" id="description_permis" rows="3" id="description_permis" name="description_permis"></textarea>
+              <label for="description_permis">Description du permis</label>
+          </div>
+          <div class="row g-2">
+              <div class="col-md">
+                  <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="prix_permis" name="prix_permis">
+                      <label for="prix_permis">Prix de base du permis</label>
+                  </div>
+              </div>
+              
+          </div>
+      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+        <button type="button" class="btn btn-primary">Ajouter <i class="fas fa-plus"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.11.3/datatables.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="gestiontypepermis_script.js"></script>
+    </body>
+</html>
