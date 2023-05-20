@@ -1,46 +1,49 @@
 <?php
 require_once "../../../../includ/connexionObject.php";
-$conn= new Database();
+$conn = new Database();
 class candidat extends Database
 {
+    
     protected $tableName = "candidat";
     //fonction to add users 
-   // Fonction pour ajouter un utilisateur
-public function add($data) {
-    // Récupérer les valeurs des champs depuis le tableau $data
-    $nom = $data['nom'];
-    $prenom = $data['prenom'];
-    $dateNaissance = $data['dateNaissance'];
-    $telephone = $data['telephone'];
-    $email = $data['email'];
-    $dateInscription = date('Y-m-d'); // Date actuelle
-    $ville = $data['ville'];
-    $photo = $data['photo'];
-    $hashedPassword = $data['hashedPassword'];
+    // Fonction pour ajouter un utilisateur
+    public function add($data)
+    {
+        // Récupérer les valeurs des champs depuis le tableau $data
+        $nom = $data['nom'];
+        $prenom = $data['prenom'];
+        $dateNaissance = $data['dateNaissance'];
+        $telephone = $data['telephone'];
+        $email = $data['email'];
+        $dateInscription = date('Y-m-d'); // Date actuelle
+        $ville = $data['ville'];
+        $photo = $data['photo'];
+        // Hasher le mot de passe
+        $hashedPassword = password_hash($data['Password'], PASSWORD_DEFAULT);
 
-    $sql = "CALL ajouter_candidat_utilisateur(:nom, :prenom, :dateNaissance, :telephone, :email, :dateInscription, :ville, :photo, :hashedPassword);";
+        $sql = "CALL ajouter_candidat_utilisateur(:nom, :prenom, :dateNaissance, :telephone, :email, :dateInscription, :ville, :photo, :hashedPassword);";
 
-    try {
-        $stmt = $this->conn->prepare($sql);
-        $stmt->bindParam(':nom', $nom);
-        $stmt->bindParam(':prenom', $prenom);
-        $stmt->bindParam(':dateNaissance', $dateNaissance);
-        $stmt->bindParam(':telephone', $telephone);
-        $stmt->bindParam(':email', $email);
-        $stmt->bindParam(':dateInscription', $dateInscription);
-        $stmt->bindParam(':ville', $ville);
-        $stmt->bindParam(':photo', $photo);
-        $stmt->bindParam(':hashedPassword', $hashedPassword);
+        try {
+            $stmt = $this->$conn->prepare($sql);
+            $stmt->bindParam(':nom', $nom);
+            $stmt->bindParam(':prenom', $prenom);
+            $stmt->bindParam(':dateNaissance', $dateNaissance);
+            $stmt->bindParam(':telephone', $telephone);
+            $stmt->bindParam(':email', $email);
+            $stmt->bindParam(':dateInscription', $dateInscription);
+            $stmt->bindParam(':ville', $ville);
+            $stmt->bindParam(':photo', $photo);
+            $stmt->bindParam(':hashedPassword', $hashedPassword);
 
-        if ($stmt->execute()) {
-            echo "Utilisateur ajouté avec succès.";
-        } else {
-            echo "Une erreur s'est produite lors de l'ajout de l'utilisateur.";
+            if ($stmt->execute()) {
+                echo "Utilisateur ajouté avec succès.";
+            } else {
+                echo "Une erreur s'est produite lors de l'ajout de l'utilisateur.";
+            }
+        } catch (PDOException $e) {
+            echo "Erreur : " . $e->getMessage();
         }
-    } catch (PDOException $e) {
-        echo "Erreur : " . $e->getMessage();
     }
-}
 
     //fonction to get rows
 
@@ -68,7 +71,7 @@ public function add($data) {
     {
         $sql = "SELECT * FROM {$this->tableName} WHERE {$field} = :{$field};";
 
-        $stmt = $this->conn->prepare($sql);
+        $stmt = $this->$conn->prepare($sql);
         $stmt->bindParam(":{$field}", $value);
         $stmt->execute();
 
@@ -120,8 +123,6 @@ public function add($data) {
                 }
             }
         }
-
-     
     }
 
 

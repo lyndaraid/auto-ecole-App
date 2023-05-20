@@ -7,7 +7,7 @@ $(document).ready(function() {
         
         // AJAX
         $.ajax({
-            url: "../ajax.php",
+            url: "/auto_école_App/page_admin/gestion%20utilisateur/gestion%20candidat/list%20Utilisateurs/ajax.php",
             type: "POST",
             dataType: "json",
             data: new FormData(this),

@@ -49,7 +49,7 @@ if (isset($_POST['Valid_registre'])) {
                 $dateInscription = date('Y-m-d'); // Date actuelle
                 $sql2 = "CALL ajouter_candidat_utilisateur('$nom', '$prenom', '$dateNaissance', '$telephone', '$email', '$dateInscription', '$ville', '$photo', '$hashedPassword');";
 
-                
+
                 $result2 = $db->query($sql2);
                 if ($result2) {
                     header("Location: registration.php?success= Votre compte a été créé avec succès.");
